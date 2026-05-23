@@ -1,0 +1,107 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FocusFlow | Productivity Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- TOP -->
+    <div class="card top-card">
+
+      <h1 id="clock">00:00:00</h1>
+
+      <p id="date">Monday, January 1 2026</p>
+
+      <h2 id="greeting">Good Morning 🌤️</h2>
+
+      <p id="quote"></p>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+
+      <!-- TIMER -->
+      <div class="card">
+
+        <h2>⏰ Focus Timer</h2>
+
+        <select id="timerSelect">
+          <option value="25">25 Minutes</option>
+          <option value="15">15 Minutes</option>
+          <option value="50">50 Minutes</option>
+        </select>
+
+        <h1 id="timer">25:00</h1>
+
+        <div class="btn-group">
+          <button id="startBtn">Start</button>
+          <button id="pauseBtn">Pause</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+
+      </div>
+
+      <!-- TASK -->
+      <div class="card">
+
+        <h2>✅ Tasks</h2>
+
+        <div class="task-input">
+          <input type="text" id="taskInput" placeholder="Add new task..." />
+          <button id="addTaskBtn">Add</button>
+        </div>
+
+        <!-- PROGRESS -->
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+
+        <p id="progressText">0% Completed</p>
+
+        <ul id="taskList"></ul>
+
+      </div>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="card quick-links">
+
+      <div class="links-header">
+        <h2>🔗 Quick Links</h2>
+
+        <button id="darkModeBtn">🌙</button>
+      </div>
+
+      <div class="link-input">
+        <input type="text" id="linkName" placeholder="Link Name" />
+        <input type="text" id="linkURL" placeholder="https://example.com" />
+        <button id="addLinkBtn">Add</button>
+      </div>
+
+      <div id="linksContainer" class="links-container"></div>
+
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
